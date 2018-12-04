@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="fyp.fyp1.MainActivity"
+    android:id="@+id/rootLayout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+
+        >
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/seekpro"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/resetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Forgot Password"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="@color/bottomText"
+        android:background="@android:color/transparent"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/resetPassword"
+        android:layout_margin="16dp"
+
+
+        >
+
+        <Button
+            android:id="@+id/btn_SignIn"
+            android:background="#b31217"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="6dp"/>
+        <Button
+            android:id="@+id/btn_Register"
+            android:background="@color/colorPrimaryDark"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="6dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
